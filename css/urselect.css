@@ -1,0 +1,128 @@
+/* browser element */
+.customizedElement {
+	position: absolute;
+	left: -9999px;
+}
+/* custom select */
+.customSelect {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	color: #000;
+	font: 18px/30px Arial,sans-serif;
+	box-sizing: border-box;
+	text-shadow: 0 2px 0 #fff;
+	height: 30px;
+	color: #333;
+	border: 1px solid #777;
+	border-radius: 5px;
+	background-color: #eee;
+	box-shadow: 0 2px 0 rgba(0,0,0,.75), inset 0 4px 0 rgba(255,255,255,.75);
+}
+.customSelect .bg-select-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 7px;
+	height: 100%;
+	overflow: hidden;
+}
+.customSelect a {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.customSelect a:before,
+.customSelect a:after {
+	content: "";
+	position: absolute;
+	right: 10px;
+	border: 4px outset transparent;
+}
+.customSelect a:before {
+	top: 50%;
+	margin-top: 2px;
+	border-top-color: #000;
+	border-style: solid;
+}
+.customSelect a:after {
+	bottom: 50%;
+	margin-bottom: 2px;
+	border-bottom-color: #000;
+	border-style: solid;
+}
+.customSelect a:focus {outline: none;}
+.customSelect .bg-select-center {
+	display: block;
+	height: 30px;
+	margin: 0 35px 0 7px;
+	line-height: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.customSelectActive {
+	color: #999;
+	box-shadow: 0 0 9px #bada55, inset 0 4px 0 rgba(255,255,255,.75);
+	z-index: 31;
+}
+.customSelect .disabled {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 7px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background:url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+	z-index: 5;
+}
+.disabled-select {
+	color: #aaa;
+}
+.disabled-select .disabled {
+	display: block;
+}
+/* custom options */
+.customOptionsHidden,
+.customOptions {
+	position: absolute;
+	overflow-y: auto;
+	box-shadow: 0 0 9px #bada55;
+	border-radius: 0 0 5px 5px;
+	z-index: 30;
+}
+.customOptionsHidden {display: none;}
+.customOptions ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-height: 200px;
+	overflow-y: auto;
+	color: #000;
+	background: #eee;
+	border: solid #777;
+	border-width: 0 1px 1px;
+	border-radius: 0 0 5px 5px;
+	font: 18px/20px Arial,sans-serif;
+	text-shadow: 0 2px 0 #fff;
+}
+.customOptions ul li {
+	width: 100%;
+	white-space: nowrap;
+}
+.customOptions a {
+	display: block;
+	padding: 5px 7px;
+	color: #000;
+	text-decoration: none;
+}
+.customOptions a:hover {
+	background: #bada55;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: none;
+}

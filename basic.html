@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			background: #fff;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			font: 12px/14px Arial,sans-serif;
+			color: #000;
+		}
+		.container {
+			max-width: 600px;
+			margin: auto;
+			padding: 50px 20px 10px;
+		}
+		h2 {
+			margin: 0;
+			font: bold 24px/26px Arial,sans-serif;
+		}
+		label {
+			display: block;
+			padding-top: 25px;
+		}
+		.field {padding-top: 10px;}
+	</style>
+	<link rel="stylesheet" href="css/urselect.css">
+	<title>UrSelect example: basic</title>
+</head>
+<body>
+	<div class="container">
+		<h2>Basic:</h2>
+		<pre>
+&lt;script&gt;
+    $(function() {
+        $('select.custom').urSelect();
+    });
+&lt;/script&gt;
+		</pre>
+		<label>Simple select:</label>
+		<div class="field">
+			<select class="custom">
+				<option value="1">Option 1</option>
+				<option value="1">Option 2</option>
+				<option value="1">Option 3</option>
+				<option value="1">Option 4</option>
+				<option value="1">Option 5</option>
+			</select>
+		</div>
+		<label>Disabled select:</label>
+		<div class="field">
+			<select class="custom" disabled>
+				<option value="1">Option 1</option>
+				<option value="1">Option 2</option>
+				<option value="1">Option 3</option>
+				<option value="1">Option 4</option>
+				<option value="1">Option 5</option>
+			</select>
+		</div>
+		<label>Simple select with browser default scroll:</label>
+		<div class="field">
+			<select class="custom">
+				<option value="1">Option 1</option>
+				<option value="1">Option 2</option>
+				<option value="1">Option 3</option>
+				<option value="1">Option 4</option>
+				<option value="1">Option 5</option>
+				<option value="1">Option 6</option>
+				<option value="1">Option 7</option>
+				<option value="1">Option 8</option>
+				<option value="1">Option 9</option>
+				<option value="1">Option 10</option>
+			</select>
+		</div>
+		<label>Flexible:</label>
+		<pre>
+&lt;script&gt;
+    $(function() {
+        $('select.custom').urSelect({
+            flexible: true
+        });
+    });
+&lt;/script&gt;
+		</pre>
+		<div class="field">
+			<select id="select_2">
+				<option value="1">Option 1</option>
+				<option value="1">Option 2</option>
+				<option value="1">Option 3</option>
+				<option value="1">Option 4</option>
+				<option value="1">Option 5</option>
+			</select>
+		</div>
+	</div>
+	<!-- latest jQuery direct from google's CDN -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/urselect.min.js"></script>
+	<script>
+		$(function() {
+			$('select.custom').urSelect();
+			$('#select_2').urSelect({
+				flexible: true
+			});
+		})
+	</script>
+</body>
+</html>
